@@ -30,7 +30,7 @@
     text-decoration: none;
     position: relative;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 2vw;
 }
 
 .nav-buttons a:last-child {
