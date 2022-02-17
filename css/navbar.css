@@ -84,11 +84,15 @@
 
 @media screen and (max-width: 600px)
 {
+    .navbar {
+        height: 70px;
+    }
+
     .nav-buttons {
         display: none;
         position: absolute;
         width: 100%;
-        top: 90px;
+        top: 70px;
         background-color: var(--carbon-black);
         align-items: right;
     }
