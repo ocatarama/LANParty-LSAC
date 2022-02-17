@@ -20,10 +20,7 @@
 }
 
 .nav-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 30%;
+    width: fit-content;
     font-size: 23px;
     margin-right: 1.5em;
 }
@@ -33,7 +30,13 @@
     text-decoration: none;
     position: relative;
     display: inline-block;
+    margin-right: 10px;
 }
+
+.nav-buttons a:last-child {
+    margin-right: 0;
+}
+
 .nav-buttons a:before {
     content: "";
     position: absolute;
