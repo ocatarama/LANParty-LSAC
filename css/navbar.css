@@ -102,9 +102,14 @@
         color: #EFEDF0;
         text-decoration: none;
         border-bottom: 1px solid grey;
-        padding-left: 15px;
         margin: 0 2px;
         width: 100%;
+        padding: 10px 0;
+        padding-left: 15px;
+    }
+
+    .nav-buttons a:last-child {
+        border-bottom: none;
     }
 
     .nav-buttons a:hover {
