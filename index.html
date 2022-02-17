@@ -19,7 +19,13 @@
         <navbar class="navbar">
             <a href="index.html"><img class="nav-logo" src="img/Sigle/Logo LP blue.png" alt="logo"></a>
 
-            <div class="nav-buttons">
+            <div class="mobile-nav" onclick="mobileToggle(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+
+            <div class="nav-buttons" id="n-btn">
                 <a href="#">Home</a>
                 <a href="#">Despre</a>
                 <a href="#">Regulament</a>
@@ -48,5 +54,7 @@
             </div>
         </div>
         
+
+        <script src="js/navbar.js"></script>
     </body>
 </html>
