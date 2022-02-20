@@ -102,10 +102,8 @@
         color: #EFEDF0;
         text-decoration: none;
         border-bottom: 1px solid grey;
-        margin: 0 2px;
         width: 100%;
         padding: 10px 0;
-        padding-left: 15px;
     }
 
     .nav-buttons a:last-child {

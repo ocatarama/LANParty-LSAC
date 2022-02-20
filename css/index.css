@@ -102,7 +102,7 @@ body {
 
 
 @media (max-width: 600px) {
-    .cont .left .reg-now {
+    .cont .left a {
         margin-bottom: 20vw;
     }
 
