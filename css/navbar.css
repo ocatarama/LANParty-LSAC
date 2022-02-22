@@ -26,7 +26,8 @@
 }
 
 .nav-buttons a {
-    color: #EFEDF0;
+    /*color: #EFEDF0;*/
+    color: red;
     text-decoration: none;
     position: relative;
     display: inline-block;
