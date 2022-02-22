@@ -122,7 +122,7 @@
 
     .mobile-nav {
         display: inline-block;
-    }
+    }{
 }
 
 @media (min-width: 600px)
@@ -131,3 +131,9 @@
         display: block;
     }
 }
+}
+.nav-buttons a:hover
+{
+    color: #1A9BF6;
+}
+
