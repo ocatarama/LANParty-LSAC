@@ -1,11 +1,17 @@
 @import './constants.css';
+.big-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
 .flex-container {
 
 	display : flex;
 	padding-top: 12%;
 	flex-direction: row;
 	justify-content: space-around;
-
+    flex: 1;
 }
 .element{
 
@@ -31,18 +37,28 @@
 	padding-top: 6%;
 
 }
-.flex-container2{
+.flex-container2 {
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-end;
-	
+    display : flex;
+    flex-direction: column;
+    width: 30em;
+    align-self: center;
+}
+.social-media img{
+    width: 5em;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    
 
 }
-.item{
+.pew-pew{
 
-	height: 5em;
+    position: relative;
+    float: left;
 
 }
 body:before{
@@ -62,3 +78,38 @@ body:before{
     align-content: center;
     opacity: 0.1;
   }
+@media(max-width: 600px){
+
+    .flex-container {
+
+    display : flex;
+    padding-top: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.element:nth-child(2){
+
+    align-self: center;
+
+}
+.element:nth-child(1){
+    order: 2;
+
+}
+.element:nth-child(2){
+    order: 1;
+}
+.element:nth-child(3){
+    order: 2;
+}
+.item{
+
+    witdh: 2em;
+    
+
+}
+body:before{
+    display: none;
+}
+}
