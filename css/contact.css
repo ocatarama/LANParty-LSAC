@@ -62,3 +62,9 @@ body:before{
     align-content: center;
     opacity: 0.1;
   }
+  @media (max-width: 600px){
+    body::before{
+        content: '';
+        display: none;
+    }
+}
