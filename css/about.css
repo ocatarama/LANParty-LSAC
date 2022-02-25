@@ -50,7 +50,7 @@
 }
 
 .about-text span {
-    color: red;
+    color: var(--darkbaby-blue);
     font-weight: 700;
 }
 
