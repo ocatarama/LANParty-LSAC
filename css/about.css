@@ -1,19 +1,14 @@
 @import './constants.css';
 .flex-container {
-
 	display : flex;
-	padding-top: 12%;
 	flex-direction: row;
     width:100%;
-    max-height: 500px;
-
+    height: fit-content;
+    background-color: rgb(239, 237, 240, 0.2);
+    position:absolute;
+    top: 30%;
 }
-.element{
 
-	text-align: left;
-	color: var(--cement-white);
-	font-size:  20px;
-}
 .reg-now {
     display: flex;
     justify-content: center;
@@ -27,33 +22,38 @@
     color: var(--cement-white);
     font-size: clamp(2rem, 2.5vw, 4rem);
 }
-.element:nth-child(2){
-    text-align: left;
-    padding: 30px;
-    flex:4;
-    color: #EFEDF0;
-}
-.element:nth-child(2):before{
-    background-color: var(--cement-white);
-    opacity: 0.1;
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
 
-    font-family: bebas-neue-by-fontfabric, sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    display: grid;
-    justify-content: center;
-    margin-top: 182px;
-    margin-bottom: 110px;
-    opacity: 0.1;
-   
+.picture1{
+    flex:1; 
+    max-height: 350px;
+    max-width: 435px;
 }
+
+.about-text {
+    flex: 5;
+    color: var(--cement-white);
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
+    font-weight: 400;
+    padding-left: 2em;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-text p {
+    text-indent: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-text span {
+    color: var(--darkbaby-blue);
+    font-weight: 700;
+}
+
 body:before{
     content: 'DESPRE';
     position: fixed;
@@ -64,42 +64,44 @@ body:before{
     z-index: -1;
     
     color: #EFEDF0;
-    font-size: 400px;
+    font-size: clamp(19rem, 27vw, 27rem);
     font-weight: 500px;
     display: grid;
     justify-content: center;
-    margin-top: 125px;
+    top: 23%;
     opacity: 0.1;
   }
-  .picture1{
-    flex:1; 
-    max-height: 500px;
-    max-width: 500px;  
-}
 
-  @media (max-width: 600px){
+@media (max-width: 600px){
     body::before{
         content: '';
         display: none;
     }
-    .picture1{
-        max-height: 0px;
+
+    .about-text {
+        flex: 1;
+        padding: 0 1em;
+        margin-bottom: 20px;
     }
-    .element:nth-child(2):before{
-        margin-top: 0px;
-        margin-bottom: 0px;
+    .picture1{
+        flex: 1;
+        width: 90%!important;
+        height: 89%!important;
+        margin: 0 1em;
     }
     .flex-container {
-
         display : flex;
-        padding-top: 20%;
-        flex-direction: row;
+        flex-direction: column-reverse;
         justify-content: space-around;
-        }
+        top: 70px;
+        background: none;
+        margin: 50px 0;
+    }
 }
 
 @media (max-width: 1140px) {
-    .cont {
-        flex-direction:column-reverse;
+    .picture1 {
+        width: 40vw;
+        height: 40vw;
     }
 }
