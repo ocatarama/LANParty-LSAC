@@ -1,3 +1,46 @@
+@import './constants.css';
+.big-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.flex-container {
+
+	display : flex;
+	padding-top: 12%;
+	flex-direction: row;
+	justify-content: space-around;
+    flex: 1;
+}
+.element{
+
+	text-align: center;
+	color: var(--cement-white);
+	font-size:  20px;
+}
+.reg-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width:fit-content;
+    height: 90px;
+    padding: 0 7vw;
+
+    border: 4px solid var(--cement-white);
+    color: var(--cement-white);
+    font-size: clamp(2rem, 2.5vw, 4rem);
+}
+.reg-now:hover{
+  transition: .5s ease-in-out;
+  background-color: rgba(239, 237, 240, .1);
+
+}
+.element:first-child{
+
+	padding-top: 6%;
+}
 body:before{
     content: 'INSCRIERI';
     position: fixed;
@@ -12,12 +55,27 @@ body:before{
     font-weight: 500px;
     display: grid;
     justify-content: center;
-    align-content: center;
+    margin-top: 125px;
     opacity: 0.1;
   }
+
   @media (max-width: 600px){
     body::before{
         content: '';
         display: none;
+    }
+    .item{
+        width: 2em;
+    }
+    body:before{
+        display: none;
+    }
+
+    .flex-container {
+
+    display : flex;
+    padding-top: 20%;
+    flex-direction: column;
+    justify-content: space-around;
     }
 }

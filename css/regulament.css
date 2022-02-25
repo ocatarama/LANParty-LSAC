@@ -13,7 +13,7 @@ body:before{
     font-weight: 500px;
     display: grid;
     justify-content: center;
-    align-content: center;
+    margin-top: 150px;
     opacity: 0.1;
   }
 
@@ -27,37 +27,9 @@ body:before{
   }
   .element{
   
-    text-align: center;
+    text-align: left;
     color: var(--cement-white);
     font-size:  20px;
-  }
-  .reg-now {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-      width:fit-content;
-      height: 90px;
-      padding: 0 7vw;
-  
-      border: 4px solid var(--cement-white);
-      color: var(--cement-white);
-      font-size: clamp(2rem, 2.5vw, 4rem);
-  }
-
-  .flex-container2{
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    
-  
-  }
-  .item{
-  
-    height: 5em;
-  
   }
     @media (max-width: 600px){
       body::before{

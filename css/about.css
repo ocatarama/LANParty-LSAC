@@ -28,24 +28,31 @@
     font-size: clamp(2rem, 2.5vw, 4rem);
 }
 .element:nth-child(2){
-    text-align: right;
-    background-color: #EFEDF0;
+    text-align: left;
     padding: 30px;
-    opacity: 0.1;
     flex:4;
-
+    color: #EFEDF0;
 }
-.flex-container2{
+.element:nth-child(2):before{
+    background-color: var(--cement-white);
+    opacity: 0.1;
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-end;
-}
-.item{
-
-	height: 5em;
-
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    display: grid;
+    justify-content: center;
+    margin-top: 182px;
+    margin-bottom: 110px;
+    opacity: 0.1;
+   
 }
 body:before{
     content: 'DESPRE';
@@ -61,7 +68,7 @@ body:before{
     font-weight: 500px;
     display: grid;
     justify-content: center;
-    align-content: center;
+    margin-top: 125px;
     opacity: 0.1;
   }
   .picture1{
@@ -74,5 +81,25 @@ body:before{
     body::before{
         content: '';
         display: none;
+    }
+    .picture1{
+        max-height: 0px;
+    }
+    .element:nth-child(2):before{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .flex-container {
+
+        display : flex;
+        padding-top: 20%;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+}
+
+@media (max-width: 1140px) {
+    .cont {
+        flex-direction:column-reverse;
     }
 }
