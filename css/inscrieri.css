@@ -68,9 +68,6 @@ body:before{
     .item{
         width: 2em;
     }
-    body:before{
-        display: none;
-    }
 
     .flex-container {
 
@@ -78,5 +75,8 @@ body:before{
     padding-top: 20%;
     flex-direction: column;
     justify-content: space-around;
+    }
+    .element{
+        align-self: center;
     }
 }

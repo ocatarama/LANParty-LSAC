@@ -36,4 +36,11 @@ body:before{
           content: '';
           display: none;
       }
+      .flex-container {
+
+        display : flex;
+        padding-top: 20%;
+        flex-direction: column;
+        justify-content: space-around;
+        }
   }
