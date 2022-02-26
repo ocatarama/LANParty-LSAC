@@ -124,12 +124,18 @@ body:before{
     padding-top: 20%;
     flex-direction: column;
     justify-content: space-around;
+    
+
     }
     .social-media{
         flex-direction: row;
+        margin-left: 35%;
+        margin-top: 25%;
     }
     .element:nth-child(2){
         order: 1;
+        padding-top: 0;
+        align-self: center;
     }
     .element:nth-child(1){
         order: 2;
@@ -137,5 +143,23 @@ body:before{
     .element:nth-child(3){
         order: 3;
     }
-    
+    .element{
+        font-size: 0.8em;
+        padding-left: 0;
+    }
+    .flex-container2{
+        width: 20em;
+    }
+    .social-media img{
+        width: 3em;
+    }
+    .textcontact{
+        font-size: 2.3em;
+        margin-left: 32%;
+
+    }
+    .textcontact1{
+        font-size: 1.3em;
+        margin-top: 30%;
+    }
 }
