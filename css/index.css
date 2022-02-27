@@ -129,48 +129,18 @@ body {
 
 .craniu {
     position: absolute;
-    width: 25px;
+    width: 3%;
+    opacity: 0;
 }
 
 #craniu1 {
     animation: animatie-craniu1 10s linear infinite;
-    left: 66%;
+    animation-delay: 2s;
 }
 
 #craniu2 {
     animation: animatie-craniu2 10s linear infinite;
-    opacity:  0%;
-}
-
-@keyframes animatie-craniu2 {
-    0%{
-        top: 55%;
-        left: 32%;
-        opacity: 0%;
-    }
-    78%{
-        top: 55%;
-        left: 32%;
-        opacity: 0%;
-        transform: scale(1);
-    }
-    83%{
-        top: 50%;
-        left: 32%;
-        opacity: 100%;
-        transform: scale(1.5);
-    }
-    96%{
-        top: 40%;
-        left: 32%;
-        opacity:  0%;
-    }
-
-    100% {
-        top: 55%;
-        left: 32%;
-        opacity: 0%;
-    }
+    animation-delay: 2s;
 }
 
 @keyframes animatie-craniu1 {
@@ -179,22 +149,30 @@ body {
         left: 68%;
         opacity: 0%;
     }
-    67%{
-        top: 64%;
-        left: 68%;
+    47%{
         opacity: 0%;
         transform: scale(1);
     }
-    72%{
-        top: 55%;
+    50%{
+        top: 64%;
         left: 68%;
         opacity: 100%;
         transform: scale(1.5);
     }
+    53%{
+        top: 5%;
+        left: 94%;
+        transform: scale(1);
+    }
+
     85%{
-        top: 50%;
-        left: 68%;
-        opacity:  0%;
+        opacity: 100%;
+    }
+
+    88%{
+        top: 5%;
+        left: 94%;
+        opacity: 0;
     }
 
     100% {
@@ -203,6 +181,57 @@ body {
         opacity: 0%;
     }
 }
+
+@keyframes animatie-craniu2 {
+    0%{
+        top: 55%;
+        left: 32%;
+        opacity: 0%;
+    }
+    58%{
+        top: 55%;
+        left: 32%;
+        opacity: 0%;
+        transform: scale(1);
+    }
+    61%{
+        top: 55%;
+        left: 32%;
+        opacity: 100%;
+        transform: scale(1.5);
+    }
+    64%{
+        top: 17%;
+        left: 94%;
+        transform: scale(1);
+    }
+
+    87%{
+        top: 17%;
+    }
+
+    90%{
+        top: 5%;
+    }
+
+    95%{
+        opacity: 100%;
+    }
+
+    99%{
+        top: 5%;
+        left: 94%;
+        opacity: 0%;
+    }
+
+    100% {
+        top: 55%;
+        left: 32%;
+        opacity: 0%;
+    }
+}
+
+
 
 @keyframes animatie-imagine {
     0%{
@@ -297,6 +326,7 @@ body {
         width: 8%;
         transform: scale(1);
         transform: rotate(5deg);
+        filter: hue-rotate(0deg);
     }
 
     61%{
@@ -359,12 +389,14 @@ body {
         left: 66%;
         width: 8%;
         transform: scale(1);
+        filter: hue-rotate(150deg);
     }
     72%{
         top: 47%;
         left: 30%;
         width: 8%;
         transform: scale(1);
+        filter: hue-rotate(0deg);
     }
 
     72.5%{
@@ -416,6 +448,10 @@ body {
         top: 50%;
         left: 30%;
         transform: scale(1);
+        filter: hue-rotate(150deg);
+    }
+    82%{
+        filter: hue-rotate(0deg);
     }
 
     90%{
@@ -429,6 +465,3 @@ body {
         transform: scale(1);
     }
   }
-
-
-
