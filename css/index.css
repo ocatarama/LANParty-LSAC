@@ -25,10 +25,11 @@ body {
     flex-direction: row;
     position: relative;
     width: 100%;
-    height: inherit;
+    min-height: calc(100vh - 90px);
     position: fixed;
     top: 0;
     left: 0;
+    padding-top: 90px;
 }
 
 .cont .left {
@@ -81,11 +82,11 @@ body {
     align-items: center;
 }
 
-.cont .right img {
+.cont .right .home-logo {
     width: 80vw;
     max-width: 800px;
-    margin-top: 80px;
     min-width: 300px;
+    animation: animatie-imagine 10s linear infinite;
 }
 
 .cont .right .counter {
@@ -100,21 +101,257 @@ body {
     content: '\02015';
 }
 
-
 @media (max-width: 600px) {
     .cont .left a {
-        margin-bottom: 20vw;
     }
 
-    .cont .right img {
-        margin-top: 120px;
-    }
 }
 
 @media (max-width: 1140px) {
     .cont {
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .cont .right {
+        justify-content: center!important;
     }
 }
+
+.tinta {
+    position: absolute;
+    animation: animatie-tinta 10s linear infinite;
+    top: 5%;
+    left: 32%;
+    width: 8%;
+    transform: rotate(0deg);
+    transform: scale(1);
+}
+
+@keyframes animatie-imagine {
+    0%{
+        filter: blur(0);
+    }
+    80%{
+        filter: blur(0);
+    }
+    90%{
+        filter: blur(3px);
+    }
+    100%{
+        filter: blur(0);
+    }
+}
+
+@keyframes animatie-tinta {
+    0% {
+        top: 5%;
+        left: 32%;
+        width: 8%;
+        transform: rotate(0deg);
+    }
+
+    35% { 
+        top: 5%;
+        left: 32%;
+        width: 8%;
+        transform: rotate(540deg);
+    }
+    40% { 
+        top: 5%;
+        left: 32%;
+        width: 8%;
+        transform: rotate(0deg);
+    }
+
+    42% { /* se misca spre stanga */
+        top: 20%;
+        left: 10%;
+        width: 8%;
+        transform: rotate(-5deg);
+    }
+    44%{ /* asteapta */
+        top: 20%;
+        left: 10%;
+        width: 8%;
+        transform: rotate(-5deg);
+    }
+    47%{ /* se misca spre dreapta */
+        top: 58%;
+        left: 65%;
+        width: 8%;
+        transform: rotate(5deg);
+    }
+    49%{ /* asteapta */
+        top: 58%;
+        left: 65%;
+        width: 8%;
+        transform: scale(1);
+    }
+    50%{ /* trage */
+        transform: scale(1.5);
+    }
+    51%{
+        transform: scale(1);
+    }
+
+    54%{
+        transform: scale(1);
+    }
+    55%{ /* trage */
+        transform: scale(1.5);
+    }
+    56%{
+        top: 50%;
+        left: 63%;
+        width: 8%;
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+
+    58%{
+        transform: scale(1);
+    }
+    59%{
+        transform: scale(1.5);
+    }
+    60%{
+        top: 50%;
+        left: 67%;
+        width: 8%;
+        transform: scale(1);
+        transform: rotate(5deg);
+    }
+
+    61%{
+        transform: scale(1);
+    }
+    61.5%{
+        transform: scale(1.5);
+    }
+    62%{
+        transform: scale(1);
+    }
+    62.5%{
+        transform: scale(1.5);
+    }
+    63%{
+        transform: scale(1);
+    }
+    63.5%{
+        transform: scale(1.5);
+    }
+    64%{
+        transform: scale(1);
+    }
+    64.5%{
+        transform: scale(1.5);
+    }
+    65%{
+        transform: scale(1);
+    }
+    65.5%{
+        transform: scale(1.5);
+    }
+    66%{
+        transform: scale(1);
+    }
+    66.5%{
+        transform: scale(1.5);
+    }
+    67%{
+        transform: scale(1);
+    }
+    67.5%{
+        transform: scale(1.5);
+    }
+    68%{
+        transform: scale(1);
+    }
+    68.5%{
+        transform: scale(1.5);
+    }
+    69%{
+        transform: scale(1);
+    }
+    69.5%{
+        transform: scale(1.5);
+    }
+
+    70%{
+        top: 66%;
+        left: 66%;
+        width: 8%;
+        transform: scale(1);
+    }
+    72%{
+        top: 47%;
+        left: 30%;
+        width: 8%;
+        transform: scale(1);
+    }
+
+    72.5%{
+        transform: scale(1.5);
+    }
+    73%{
+        transform: scale(1);
+    }
+    73.5%{
+        transform: scale(1.5);
+    }
+    74%{
+        transform: scale(1);
+    }
+    74.5%{
+        transform: scale(1.5);
+    }
+    75%{
+        transform: scale(1);
+    }
+    75.5%{
+        transform: scale(1.5);
+    }
+    76%{
+        transform: scale(1);
+    }
+    76.5%{
+        transform: scale(1.5);
+    }
+    77%{
+        transform: scale(1);
+    }
+    77.5%{
+        transform: scale(1.5);
+    }
+    78%{
+        transform: scale(1);
+    }
+    78.5%{
+        transform: scale(1.5);
+    }
+    79%{
+        transform: scale(1);
+    }
+    79.5%{
+        transform: scale(1.5);
+    }
+    80%{
+        top: 50%;
+        left: 30%;
+        transform: scale(1);
+    }
+
+    90%{
+        transform: scale(3);
+    }
+
+    100% {
+        top: 5%;
+        left: 32%;
+        width: 8%;
+        transform: scale(1);
+    }
+  }
+
 
 
