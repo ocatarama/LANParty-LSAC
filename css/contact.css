@@ -19,6 +19,9 @@
 	color: var(--cement-white);
 	font-size:  20px;
 }
+.element a{
+    text-decoration: none;
+}
 .reg-now {
     display: flex;
     justify-content: center;
