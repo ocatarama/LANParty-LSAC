@@ -61,8 +61,10 @@ body:before{
     justify-content: center;
     margin-top: 125px;
     opacity: 0.1;
-  }
-
+}
+p{
+    text-align: left;
+}
   @media (max-width: 600px){
     body::before{
         content: '';

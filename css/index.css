@@ -17,7 +17,7 @@ body {
     width: inherit;
     height: inherit;
     position: relative;
-    background: linear-gradient(225deg, rgba(34,32,35,1) 0%, rgba(50,50,50,1) 50%, rgba(34,32,35,1) 100%);
+    background-image: url("/img/Design/background.png");
 }
 
 .cont {

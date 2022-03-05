@@ -6,11 +6,12 @@
     align-items: center;
     width: 100vw;
     height: 90px;
-    background-color: var(--carbon-black);
+    background-color: #413E3E;
     z-index: 999;
     position: absolute;
     top: 0;
     left: 0;
+    
 }
 
 .nav-logo {
