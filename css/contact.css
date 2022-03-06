@@ -38,8 +38,8 @@ body {
 .main-container {
     display: flex;
     flex-direction: column; 
-    width: 100%; min-height: 
-    calc(100vh - 90px); 
+    width: 100%;
+    min-height: calc(100vh - 90px); 
     padding-top: 90px; 
     color: white;  
 }
@@ -127,6 +127,7 @@ body:before {
         flex-wrap: nowrap;
         flex-direction: column;
         padding-top: 0px;
+        font-size: 2.3rem!important;
     }
 
     .coordonator-area {
@@ -134,7 +135,7 @@ body:before {
     }
 
     .follow-area-background {
-        width: 20rem;
+        width: 30rem;
         left: calc(100% / 2 - 15rem);
     }
 }
