@@ -31,20 +31,16 @@ body {
 .cont {
     display: flex;
     flex-direction: row;
-    position: relative;
     width: 100%;
     min-height: calc(100vh - 90px);
-    position: fixed;
-    top: 0;
-    left: 0;
     padding-top: 90px;
 }
 
 .cont .left {
-    flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 
 .cont .left img {
@@ -60,7 +56,12 @@ body {
 }
 
 .cont .left a {
-    text-decoration: none;
+    font-size: 2rem;
+    text-decoration: none; 
+    color: white;
+
+    padding: 20px 7vw;
+    border: 4px solid white; 
 }
 
 .cont .left .reg-now {
@@ -113,14 +114,13 @@ body {
     html{
         overflow: visible;
     }
-    .cont .left a {
-    }
 
 }
 
 @media (max-width: 1140px) {
     .cont {
         flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
 
     .cont .right {
