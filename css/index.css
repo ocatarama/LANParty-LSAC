@@ -9,6 +9,7 @@ html {
 }
 
 body {    
+    background-image: url("../img/Design/background.png");
     margin: 0;
     padding: 0;
     font-family: bebas-neue-by-fontfabric, sans-serif;
@@ -17,7 +18,11 @@ body {
     width: inherit;
     height: inherit;
     position: relative;
-    background-image: url("/img/Design/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
 }
 
 .cont {
