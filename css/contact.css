@@ -132,4 +132,9 @@ body:before {
     .coordonator-area {
         padding-top: 75px
     }
+
+    .follow-area-background {
+        width: 20rem;
+        left: calc(100% / 2 - 15rem);
+    }
 }
