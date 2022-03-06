@@ -3,11 +3,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 .button {
     display: block;
     color: white;
