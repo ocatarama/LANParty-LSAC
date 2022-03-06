@@ -40,6 +40,7 @@ body:before{
     display:flex;
     justify-content: center;
     flex-direction: column;
+    letter-spacing: 1.5px;
 }
 .about-text p {
     text-indent: 20px;
@@ -53,8 +54,9 @@ body:before{
 
 .about-text span {
     color: var(--darkbaby-blue);
-    font-weight: 700;
+    font-weight: 400;
 }
+
 .element a{
   text-decoration: none;
 }

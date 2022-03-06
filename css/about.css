@@ -39,6 +39,7 @@
     display:flex;
     justify-content: center;
     flex-direction: column;
+    letter-spacing: 1.5px;
 }
 .about-text p {
     text-indent: 20px;

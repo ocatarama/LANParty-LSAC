@@ -123,6 +123,10 @@ body:before {
 }
 
 @media (max-width: 850px) {
+    body::before{
+        content: '';
+        display: none;
+    }
     .contact-area {
         flex-wrap: nowrap;
         flex-direction: column;
