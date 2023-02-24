@@ -18,35 +18,60 @@ body:before{
   }
 
   .flex-container {
-  
     display : flex;
-    padding-top: 12%;
+    padding-top: 90px;
     flex-direction: row;
     justify-content: space-around;
+    height: calc(100vh - 90px)
   
   }
   .element{
-  
-    text-align: left;
+    text-align: justify;
     color: var(--cement-white);
     font-size:  20px;
+    max-width: 700px;
   }
+  /* width */
+  .element::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  .element::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Handle */
+  .element::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px
+  }
+
+  /* Handle on hover */
+  .element::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
   .about-text {
-    flex: 5;
     color: var(--cement-white);
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    /* font-size: clamp(1rem, 1.5vw, 2rem); */
     font-weight: 400;
-    padding-left: 2em;
+    padding: 0px 20px;
     display:flex;
     justify-content: center;
     flex-direction: column;
     letter-spacing: 1.5px;
-}
+    padding: 50px 0px;
+  }
 .about-text p {
-    text-indent: 20px;
     margin: 0;
     margin-bottom: 20px;
 }
+
+.about-text p.indent {
+  margin-left: 60px;
+}
+
 
 .about-text p:last-child {
     margin-bottom: 0;

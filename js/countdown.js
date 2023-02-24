@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Mar 19, 2022 10:00:00").getTime();
+var countDownDate = new Date("Mar 11, 2023 10:00:00").getTime();
 
 var now = new Date().getTime();
 
